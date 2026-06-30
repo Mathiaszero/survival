@@ -1,9 +1,9 @@
-grub = {}
+food = {}
 
-grub.modpath = core.get_modpath("grub")
-dofile(grub.modpath.."/craft.lua")
+.modpath = core.get_modpath("food")
+dofile(food.modpath.."/craft.lua")
 
-text = "Grub mod loaded."
+text = "food mod loaded."
 print(text)
 
 core.register_on_joinplayer(function(player)

@@ -5,11 +5,11 @@ function eat(i, u, pt, h)--itemstack, user, pointed_thing, hunger
     return core.do_item_eat(1, nil, i, u, pt)
 end
 
-core.register_craftitem("grub:sardine_raw", {
+core.register_craftitem("food:sardine_raw", {
     description = "Raw Sardine",
     inventory_image = "sardine_raw.png",
 })
-core.register_craftitem("grub:sardine_cooked", {
+core.register_craftitem("food:sardine_cooked", {
     description = "Cooked Sardine",
     inventory_image = "sardine_cooked.png",
     --on_use = eat(8)--1=8
@@ -17,11 +17,11 @@ core.register_craftitem("grub:sardine_cooked", {
         eat(i, u, pt, 8)
     end
 })
-core.register_craftitem("grub:mackerel_raw", {
+core.register_craftitem("food:mackerel_raw", {
     description = "Raw Mackerel",
     inventory_image = "mackerel_raw.png",
 })
-core.register_craftitem("grub:mackerel_cooked", {
+core.register_craftitem("food:mackerel_cooked", {
     description = "Cooked Mackerel",
     inventory_image = "mackerel_cooked.png",
     --on_use = eat(15)--1=15
@@ -29,11 +29,11 @@ core.register_craftitem("grub:mackerel_cooked", {
         eat(i, u, pt, 15)
     end
 })
-core.register_craftitem("grub:eel_raw", {
+core.register_craftitem("food:eel_raw", {
     description = "Raw Eel",
     inventory_image = "eel_raw.png",
 })
-core.register_craftitem("grub:eel_cooked", {
+core.register_craftitem("food:eel_cooked", {
     description = "Cooked Eel",
     inventory_image = "eel_cooked.png",
     --on_use = eat(10)--2=20
@@ -41,22 +41,22 @@ core.register_craftitem("grub:eel_cooked", {
         eat(i, u, pt, 10)
     end
 })
-core.register_craftitem("grub:salmon_raw", {
+core.register_craftitem("food:salmon_raw", {
     description = "Raw Salmon",
     inventory_image = "salmon_raw.png",
 })
-core.register_craftitem("grub:salmon_cooked", {
+core.register_craftitem("food:salmon_cooked", {
     description = "Cooked Salmon",
     inventory_image = "salmon_cooked.png",
     on_use = function(i, u, pt)
         eat(i, u, pt, 15)
     end
 })
-core.register_craftitem("grub:halibut_raw", {
+core.register_craftitem("food:halibut_raw", {
     description = "Raw Halibut",
     inventory_image = "halibut_raw.png",
 })
-core.register_craftitem("grub:halibut_cooked", {
+core.register_craftitem("food:halibut_cooked", {
     description = "Cooked Halibut",
     inventory_image = "halibut_cooked.png",
     --on_use = eat(15)--3=45
@@ -64,11 +64,11 @@ core.register_craftitem("grub:halibut_cooked", {
         eat(i, u, pt, 15)
     end
 })
-core.register_craftitem("grub:king_crab_raw", {
+core.register_craftitem("food:king_crab_raw", {
     description = "Raw King Crab",
     inventory_image = "king_crab_raw.png",
 })
-core.register_craftitem("grub:king_crab_cooked", {
+core.register_craftitem("food:king_crab_cooked", {
     description = "Cooked King Crab",
     inventory_image = "king_crab_cooked.png",
     --on_use = eat(12)--4=48
@@ -76,11 +76,11 @@ core.register_craftitem("grub:king_crab_cooked", {
         eat(i, u, pt, 12)
     end
 })
-core.register_craftitem("grub:tuna_raw", {
+core.register_craftitem("food:tuna_raw", {
     description = "Raw Tuna",
     inventory_image = "tuna_raw.png",
 })
-core.register_craftitem("grub:tuna_cooked", {
+core.register_craftitem("food:tuna_cooked", {
     description = "Cooked Tuna",
     inventory_image = "tuna_cooked.png",
     --on_use = eat(15)--4=60
@@ -88,11 +88,11 @@ core.register_craftitem("grub:tuna_cooked", {
         eat(i, u, pt, 15)
     end
 })
-core.register_craftitem("grub:swordfish_raw", {
+core.register_craftitem("food:swordfish_raw", {
     description = "Raw Swordfish",
     inventory_image = "swordfish_raw.png",
 })
-core.register_craftitem("grub:swordfish_cooked", {
+core.register_craftitem("food:swordfish_cooked", {
     description = "Cooked Swordfish",
     inventory_image = "swordfish_cooked.png",
     --on_use = eat(15)--6=90
@@ -100,11 +100,11 @@ core.register_craftitem("grub:swordfish_cooked", {
         eat(i, u, pt, 15)
     end
 })
-core.register_craftitem("grub:bugshark_raw", {
+core.register_craftitem("food:bugshark_raw", {
     description = "Raw Bugshark",
     inventory_image = "bugshark_raw.png",
 })
-core.register_craftitem("grub:bugshark_cooked", {
+core.register_craftitem("food:bugshark_cooked", {
     description = "Cooked Bugshark",
     inventory_image = "bugshark_cooked.png",
     --on_use = eat(20)--10=200
